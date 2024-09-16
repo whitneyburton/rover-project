@@ -1,4 +1,4 @@
-# Rover - Search Results
+# Rover - Search Results :dog: :house_with_garden: 
 
 This repo contains a simple command-line program that reads and writes CSV data. For now we are working with a CSV of Rover review data for a variety of sitters (`reviews.csv`). This program allows takes that CSV data and transforms it to a readable CSV (`sitters.csv`) which includes:
 
@@ -8,7 +8,7 @@ This repo contains a simple command-line program that reads and writes CSV data.
 - **sitter ratings score**: the average of the sitters stay ratings
 - **sitter search score**: a weighted average of the Profile Score and Ratings Score
 
-## Setup
+## Setup :computer: 
 
 1. In your terminal, run:
 
@@ -20,7 +20,7 @@ This repo contains a simple command-line program that reads and writes CSV data.
 3. Run `npm start` to process the `reviews.csv` file. Results will be stored to `sitters.csv`.
 4. To run the test suite, run `npm test`.
 
-## Discussion Question
+## Discussion Question :writing_hand: 
 
 Imagine you are designing a Rover-like production web application based on the exercise you've just completed. The application will compute the search scores
 for sitters, return a list of search results based on those scores, and display them to the user through a web UI.
@@ -33,7 +33,7 @@ for sitters, return a list of search results based on those scores, and display 
 - [Tailwind CSS](https://tailwindcss.com/) - for styling
 - [Radix UI](https://www.radix-ui.com/) - for humble building blocks for UI components - prioritizes accessibility and easily customizable
 
-#### Component heirarchy
+#### Component heirarchy 
 
 - **App** > top level parent component to handle global state and routing if necessary.
 - **SearchButton** > component with button for users to click on to "retrieve" the data (aka retrieve the processed CSV sitter data)
