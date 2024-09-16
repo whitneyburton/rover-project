@@ -1,7 +1,5 @@
 # Rover - Search Results
 
----
-
 This repo contains a simple command-line program that reads and writes CSV data. For now we are working with a CSV of Rover review data for a variety of sitters (`reviews.csv`). This program allows takes that CSV data and transforms it to a readable CSV (`sitters.csv`) which includes:
 
 - **sitter name**
@@ -9,8 +7,6 @@ This repo contains a simple command-line program that reads and writes CSV data.
 - **sitter profile score**: 5 times the fraction of the English alphabet comprised by the distinct letters in the sitter's name
 - **sitter ratings score**: the average of the sitters stay ratings
 - **sitter search score**: a weighted average of the Profile Score and Ratings Score
-
----
 
 ## Setup
 
@@ -23,8 +19,6 @@ This repo contains a simple command-line program that reads and writes CSV data.
 2. Run `npm install` to install dependencies.
 3. Run `npm start` to process the `reviews.csv` file. Results will be stored to `sitters.csv`.
 4. To run the test suite, run `npm test`.
-
----
 
 ## Discussion Question
 
@@ -59,8 +53,6 @@ In order to manage state across this search tool, there will need to be a handfu
 State management would increase in complexity as features are added to allow users to interact more with the search results. For example, we could build on this project to allow users to filter the search results, or to sort them based on a value. First consideration that comes to mind is that we will likely need to return more data to the `sitters.csv` based on these needs.
 
 For example, lets say a dog parent needs a sitter tonight - like in a couple of hours. They come to search and want to see who they can get ahold of the fastest. Currently, this CSV program doesn't work with/return the `response_time_minutes` value, but we could add more logic to our `processReviewsCsv` util so that we average those scores for a sitter as well, and allow dog owners to sort the results based on that value. This way, dog owners could find sitters who are most likely to respond to their requests right away.
-
----
 
 Future possiblities:
 
